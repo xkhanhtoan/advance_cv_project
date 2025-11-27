@@ -3,15 +3,15 @@ import os
 import cv2
 
 # --- CẤU HÌNH ---
-IMG_FOLDER = r'D:\ADMIN\Documents\Classwork\CV\SROIE2019\test\img'       # Đường dẫn chứa ảnh trên máy bạn
-TXT_FOLDER = r'D:\ADMIN\Documents\Classwork\CV\SROIE2019\test\box' # Đường dẫn chứa file txt
+IMG_FOLDER = r'D:\ADMIN\Documents\Classwork\advance_cv_project\SROIE2019\train\img'       # Đường dẫn chứa ảnh trên máy bạn
+TXT_FOLDER = r'D:\ADMIN\Documents\Classwork\advance_cv_project\SROIE2019\train\box' # Đường dẫn chứa file txt
 
 # --- SỬA ĐỔI QUAN TRỌNG Ở ĐÂY ---
 # Copy chính xác phần đường dẫn đứng trước tên file trong snippet bạn gửi
 # Lưu ý: Không bao gồm tên file (ví dụ X5100...jpg), chỉ lấy phần thư mục
-STORAGE_PREFIX = "/data/local-files/?d=ADMIN%5CDocuments%5CClasswork%5CCV%5CSROIE2019%5Ctest%5Cimg%5C"
+STORAGE_PREFIX = "/data/local-files/?d=ADMIN%5CDocuments%5CClasswork%5Cadvance_cv_project%5CSROIE2019%5Ctrain%5Cimg%5C"
 
-OUTPUT_JSON = 'sroie_test.json'
+OUTPUT_JSON = '../sroie_train.json'
 
 data_list = []
 
