@@ -56,7 +56,7 @@ Sử dụng **Label Studio** để gán nhãn và trực quan hoá dữ liệu.
 
 ---
 
-## 🔧 Cài đặt môi trường
+## Cài đặt môi trường
 
 Cài đặt thư viện cần thiết:
 
