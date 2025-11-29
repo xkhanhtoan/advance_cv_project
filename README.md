@@ -84,3 +84,45 @@ python ./scripts/train_val_split.py
 ```bash
 python ./scripts/fix_class_id.py
 ```
+* Train model
+```bash
+python ./train/sroie_yolov8_finetune.py
+```
+```bash
+python ./train/sroie_yolov9c_finetune.py
+```
+
+## Gán nhãn cho dữ liệu ảnh chụp hoá đơn và fine-tune trên dữ liệu này
+* Tiền xử lý ảnh
+```bash
+python ./data_preprocessing/preprocessing.py
+```
+* Xử dụng mô hình YOLO đã fine-tune để gán nhãn tự động
+```bash
+python ./data_preprocessing/data_labelling.py
+```
+
+* Import dữ liệu đã được gán nhãn vào label-studio để check lại theo guideline ở [label-studio-guide.pdf](documents/label-studio-guide.pdf)
+
+* Fine-tune dữ liệu theo pineline tương tự với SROIE dataset, kiểm tra đường dẫn chính xác trước khi chạy chương trình
+* Chuẩn bị dữ liệu cho YOLO
+```bash
+python ./scripts/train_val_split.py
+```
+```bash
+python ./scripts/fix_class_id.py
+```
+* Train model
+```bash
+python ./train/receipt_yolov8_finetune.py
+```
+```bash
+python ./train/receipt_yolov9c_finetune.py
+```
+
+* Đánh giá chương trình: [eval.ipynb](evaluate/eval.ipynb)
+
+## Phân công công việc
+* Hoàng Lê Tuấn: Thu thập dữ liệu, gán nhãn
+* Nguyễn Khánh Toán: Tiền xử lý dữ liệu
+* Phạm Văn Vinh: Finetune mô hình

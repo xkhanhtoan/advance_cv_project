@@ -2,7 +2,7 @@ import os
 import glob
 
 # ĐƯỜNG DẪN DATASET
-DATASET_DIR = '/workspace/Datasets/SROIE_YOLO_TRAIN'
+DATASET_DIR = r'D:\ADMIN\Documents\Classwork\advance_cv_project\Datasets\RECEIPT_YOLO_TRAIN'
 
 def fix_class_ids():
     # Tìm tất cả file .txt
@@ -42,10 +42,10 @@ def fix_class_ids():
 
     print(f"Xong! Đã sửa {count} file.")
     
-    # Xóa cache lần nữa cho chắc
-    os.system(f"rm -rf {DATASET_DIR}/train/labels.cache")
-    os.system(f"rm -rf {DATASET_DIR}/val/labels.cache")
-    print("Đã xóa cache cũ.")
+    # Xóa cache
+    # os.system(f"rm -rf {DATASET_DIR}/train/labels.cache")
+    # os.system(f"rm -rf {DATASET_DIR}/val/labels.cache")
+    # print("Đã xóa cache cũ.")
 
 if __name__ == "__main__":
     fix_class_ids()
