@@ -4,9 +4,9 @@ import random
 import urllib.parse
 
 # --- CẤU HÌNH ---
-SOURCE_IMAGES_DIR = r'/SROIE2019/train/img'
-SOURCE_LABELS_DIR = r'/project-17-at-2025-11-26-14-04-d3149f9c/labels'
-DEST_DIR = r'../Datasets/SROIE_YOLO_TRAIN'
+SOURCE_IMAGES_DIR = r'D:\ADMIN\Documents\Classwork\advance_cv_project\data\Receipt_OCR_1\pre-processed'
+SOURCE_LABELS_DIR = r'D:\ADMIN\Documents\Classwork\advance_cv_project\project-28-at-2025-11-29-21-00-8d2f4877\labels'
+DEST_DIR = r'../Datasets/RECEIPT_YOLO_TRAINx'
 
 # Tỷ lệ Train 80%, còn lại 20% là Val
 TRAIN_RATIO = 0.8

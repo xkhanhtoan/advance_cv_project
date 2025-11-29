@@ -16,13 +16,13 @@ Mục tiêu của dự án là xây dựng một pipeline xử lý hoá đơn ho
 
 ##### **SROIE Dataset V2 – Kaggle**
 
-Nguồn: [https://www.kaggle.com/datasets/urbikn/sroie-datasetv2](https://www.kaggle.com/datasets/urbikn/sroie-datasetv2)
+Nguồn: [SROIE Dataset V2](https://www.kaggle.com/datasets/urbikn/sroie-datasetv2)
 
 Dùng để huấn luyện mô hình YOLO nhận diện các vùng text cơ bản.
 
 ##### **Bộ dữ liệu tự thu thập**
 
-Nguồn: [https://drive.google.com/drive/folders/1EmXEVtvxkPc3uyjkX2Viw8gBuQHkwlLH](https://drive.google.com/drive/folders/1EmXEVtvxkPc3uyjkX2Viw8gBuQHkwlLH)
+Nguồn: [RECEIPT_OCR](https://drive.google.com/drive/folders/1o9z7aHz03oNXBfJ1zRomDiLqBSRB2ax2?usp=sharing)
 
 Bao gồm nhiều loại hoá đơn chụp thực tế, giúp mô hình tổng quát tốt hơn.
 
@@ -76,7 +76,7 @@ python ./scripts/convert_sroie_to_label_studio.py
 
 Kết quả lưu tại [sroie_train.json](sroie_train.json) và [sroie_test.json](sroie_test.json)
 
-* Import dataset vào label-studio theo hướng dẫn tại [label-studio-guide.docx](documents/label-studio-guide.docx)
+* Import dataset vào label-studio theo hướng dẫn tại [label-studio-guide.pdf](documents/label-studio-guide.pdf)
 * Chuẩn bị dữ liệu cho YOLO
 ```bash
 python ./scripts/train_val_split.py

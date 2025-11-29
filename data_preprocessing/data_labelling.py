@@ -11,14 +11,14 @@ import urllib.parse
 MODEL_PATH = r'..\train\runs\detect\sroie_yolov9c_finetune\weights\best.pt'
 
 # 2. Thư mục chứa ảnh đầu vào
-INPUT_FOLDER = r'D:\ADMIN\Documents\Classwork\advance_cv_project\preprocessed'
+INPUT_FOLDER = r'D:\ADMIN\Documents\Classwork\advance_cv_project\data\Receipt_OCR_0\pre-processed'
 
 # 3. Tên file JSON kết quả
 OUTPUT_JSON = 'output_results_labelstudio.json'
 
 # 4. Prefix đường dẫn Local Storage
 # (ADMIN\Documents... -> ADMIN%5CDocuments...)
-LOCAL_STORAGE_PREFIX = "/data/local-files/?d=ADMIN%5CDocuments%5CClasswork%5Cadvance_cv_project%5Cpreprocessed%5C"
+LOCAL_STORAGE_PREFIX = "/data/local-files/?d=ADMIN%5CDocuments%5CClasswork%5Cadvance_cv_project%5Cdata%5CReceipt_OCR_0%5Cpre-processed%5C"
 
 # --- XỬ LÝ ---
 
