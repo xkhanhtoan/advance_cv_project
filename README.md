@@ -123,6 +123,6 @@ python ./train/receipt_yolov9c_finetune.py
 * Đánh giá chương trình: [eval.ipynb](evaluate/eval.ipynb)
 
 ## Phân công công việc
-* Hoàng Lê Tuấn: Thu thập dữ liệu
+* Hoàng Lê Tuấn: Thu thập dữ liệu 
 * Nguyễn Khánh Toán: Tiền xử lý dữ liệu
 * Phạm Văn Vinh: Finetune mô hình
