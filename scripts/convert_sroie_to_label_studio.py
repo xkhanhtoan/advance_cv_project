@@ -3,12 +3,10 @@ import os
 import cv2
 
 # --- CẤU HÌNH ---
-IMG_FOLDER = r'D:\ADMIN\Documents\Classwork\advance_cv_project\SROIE2019\train\img'       # Đường dẫn chứa ảnh trên máy bạn
+IMG_FOLDER = r'D:\ADMIN\Documents\Classwork\advance_cv_project\SROIE2019\train\img'       # Đường dẫn chứa ảnh trên máy
 TXT_FOLDER = r'D:\ADMIN\Documents\Classwork\advance_cv_project\SROIE2019\train\box' # Đường dẫn chứa file txt
 
-# --- SỬA ĐỔI QUAN TRỌNG Ở ĐÂY ---
-# Copy chính xác phần đường dẫn đứng trước tên file trong snippet bạn gửi
-# Lưu ý: Không bao gồm tên file (ví dụ X5100...jpg), chỉ lấy phần thư mục
+# sửa prefix theo cấu hình của label-studio
 STORAGE_PREFIX = "/data/local-files/?d=ADMIN%5CDocuments%5CClasswork%5Cadvance_cv_project%5CSROIE2019%5Ctrain%5Cimg%5C"
 
 OUTPUT_JSON = '../sroie_train.json'
@@ -21,7 +19,7 @@ for filename in os.listdir(IMG_FOLDER):
     if not filename.endswith(('.jpg', '.png', '.jpeg')):
         continue
 
-    # ... (Giữ nguyên phần đọc ảnh và txt như code cũ) ...
+    # ......
     img_path = os.path.join(IMG_FOLDER, filename)
     img = cv2.imread(img_path)
     if img is None: continue

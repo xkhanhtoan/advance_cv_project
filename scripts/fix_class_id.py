@@ -1,7 +1,7 @@
 import os
 import glob
 
-# ĐƯỜNG DẪN DATASET CỦA BẠN (Sửa lại cho đúng)
+# ĐƯỜNG DẪN DATASET
 DATASET_DIR = '/workspace/Datasets/SROIE_YOLO_TRAIN'
 
 def fix_class_ids():

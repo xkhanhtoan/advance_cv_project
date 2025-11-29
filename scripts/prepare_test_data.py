@@ -60,8 +60,6 @@ def clean_filename_and_fix_content():
         dst_lbl_path = os.path.join(DEST_DIR, 'labels', real_lbl_name)
 
         # Chỉ xử lý nếu tìm thấy ảnh gốc
-        # Lưu ý: Bạn cần chắc chắn đường dẫn ảnh nguồn đúng
-        # Ở đây tôi giả định ảnh nguồn tên là X123.jpg nằm trong SOURCE_RAW_IMAGES
         if os.path.exists(src_img_path):
             shutil.copy(src_img_path, dst_img_path)
 
@@ -93,10 +91,6 @@ def clean_filename_and_fix_content():
 
             count_ok += 1
         else:
-            # Rất có thể tên file ảnh bên nguồn cũng bị mã hóa dài loằng ngoằng
-            # Trường hợp này copy thẳng file ảnh nguồn tương ứng sang và đổi tên
-            # Logic này phức tạp hơn tùy thuộc bản export.
-            # Tạm thời báo lỗi để bạn check path.
             print(f"Cảnh báo: Không tìm thấy ảnh gốc cho {file_id} tại {src_img_path}")
             count_err += 1
 
