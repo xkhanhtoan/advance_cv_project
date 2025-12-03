@@ -56,7 +56,7 @@ Sử dụng **Label Studio** để gán nhãn và trực quan hoá dữ liệu.
 
 ---
 
-## 🔧 Cài đặt môi trường
+## Cài đặt môi trường
 
 Cài đặt thư viện cần thiết:
 
@@ -123,6 +123,6 @@ python ./train/receipt_yolov9c_finetune.py
 * Đánh giá chương trình: [eval.ipynb](evaluate/eval.ipynb)
 
 ## Phân công công việc
-* Hoàng Lê Tuấn: Thu thập dữ liệu, gán nhãn
+* Hoàng Lê Tuấn: Thu thập dữ liệu 
 * Nguyễn Khánh Toán: Tiền xử lý dữ liệu
 * Phạm Văn Vinh: Finetune mô hình
