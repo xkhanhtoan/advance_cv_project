@@ -47,12 +47,11 @@ Sử dụng **Label Studio** để gán nhãn và trực quan hoá dữ liệu.
 
 ### **4. OCR (in progress)**
 
-Đang thực hiện.
-
+* Sử dụng Tesseract/EasyOCR để nhận diện tiếng Việt.
 
 ### **5. Information Extraction (in progress)**
 
-Đang thực hiện.
+* Fine-tune mô hình LayoutLMv3 cho bài toán KIE.
 
 ---
 
@@ -120,7 +119,22 @@ python ./train/receipt_yolov8_finetune.py
 python ./train/receipt_yolov9c_finetune.py
 ```
 
+
+## Nhận diện văn bản tiếng Việt
+```bash
+python ./scripts/ocr.py
+```
+
+## Finetune LayoutLMv3
+```bash
+python ./train/layoutlmv3_train.py
+```
 * Đánh giá chương trình: [eval.ipynb](evaluate/eval.ipynb)
+
+## Inference
+```bash
+python ./inference/inference.py
+```
 
 ## Phân công công việc
 * Hoàng Lê Tuấn: Thu thập dữ liệu 
