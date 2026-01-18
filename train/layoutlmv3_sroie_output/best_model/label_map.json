@@ -1,0 +1,1 @@
+{"label2id": {"O": 0, "B-COMPANY": 1, "I-COMPANY": 2, "B-DATE": 3, "I-DATE": 4, "B-ADDRESS": 5, "I-ADDRESS": 6, "B-TOTAL": 7, "I-TOTAL": 8}, "id2label": {"0": "O", "1": "B-COMPANY", "2": "I-COMPANY", "3": "B-DATE", "4": "I-DATE", "5": "B-ADDRESS", "6": "I-ADDRESS", "7": "B-TOTAL", "8": "I-TOTAL"}}
